@@ -13,10 +13,12 @@
 			<header class="Header">
 		 		<div class="Grid">
 		 			<div class="Grid__item Grid__item_third">
-		 				<img  class="Logo__pic" src="img/Header__logo.png" alt="logo">
-		 				<p class="Logo__text">
-		 					Waxom
-		 				</p>
+						<a class="LogoLink" href="#">
+			 				<img  class="Logo__pic" src="img/Header__logo.png" alt="logo">
+			 				<p class="Logo__text">
+			 					Waxom
+			 				</p>
+						</a>
 		 			</div>
 		 			<div class="Grid__item Grid__item_big">
 		 				<nav class="Nav">
@@ -46,34 +48,28 @@
 		 					</a>
 		 				</nav>
 		 				<div class="Modul">
-		 					<a class="Modul__Cart" href="#">
-		 						<img class="Modul__cartPic" src="img/icon-cart.png" alt="cart">
-		 					</a>
-		 					<a class="Modul__search" href="#">
-		 						<img class="Modul__searchPic" src="img/icon-search.png" alt="search">
-		 					</a>
+		 					<a class="Modul__box Modul__box_cart" href="#"></a>
+		 					<a class="Modul__box Modul__box_search" href="#"></a>
 		 				</div>
 		 			</div>
 		 		</div>
 		 	</header>
 			<main class="Slider">
-				<div class="Container">
-					<p class="Slider__TopText">
-						Uniaque and Modern Design
-					</p>	
-					<p class="Slider__middleText">
-						Portfolio PSD Template
+				<p class="Slider__TopText">
+					Uniaque and Modern Design
+				</p>	
+				<p class="Slider__middleText">
+					Portfolio PSD Template
+				</p>
+				<div class="Slider__description">
+					<p class="Description Description_white">
+						Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 					</p>
-					<div class="Slider__description">
-						<p class="Description Description_white">
-							Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-						</p>
-					</div>
-					<div class="Slider__Button">
-						<button class="Button">
-							Get Started
-						</button>
-					</div>
+				</div>
+				<div class="Slider__Button">
+					<button class="Button">
+						Get Started
+					</button>
 				</div>
 			</main>
 		</div>
@@ -82,45 +78,49 @@
 			<div class="Container">
 				<div class="Grid">
 					<div class="Grid__item">
-						<div class="Services Services_webApp">
+						<div class="Services">
+							<img class="Services__icon" src="img/Services_webApp.png" alt="webApp">
 							<h3 class="Services__heading">
 								Web & App Design
 							</h3>
 							<p class="Services__text">
 								Nam liber tempor cum soluta nobis eleifend option congue nihil
 							</p>
-							<div class="Line"></div>
+							<div class="Servicer__line Line"></div>
 						</div>
 					</div>
 					<div class="Grid__item">
-						<div class="Services Services_develop">
+						<div class="Services">
+							<img class="Services__icon" src="img/Services_develop.png" alt="develop">
 							<h3 class="Services__heading">
 								Development
 							</h3>
 							<p class="Services__text">
 								Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy n
 							</p>
-							<div class="Line"></div>
+							<div class="Servicer__line Line"></div>
 						</div>
 					</div>
 					<div class="Grid__item">
-						<div class="Services Services_custom">
+						<div class="Services">
+							<img class="Services__icon" src="img/Services_custom.png" alt="custom">
 							<h3 class="Services__heading">
 								Customization
 							</h3>
 							<p class="Services__text">
 								Nam liber tempor cum soluta nobis eleifend option congue nihil #1
 							</p>
-							<div class="Line"></div>
+							<div class="Servicer__line Line"></div>
 						</div>
 					</div>
 					<div class="Grid__item">
-						<div class="Services Services_marketing">
+						<div class="Services">
+							<img class="Services__icon" src="img/Services_marketing.png" alt="marketing">
 							<h3 class="Services__heading">Marketing</h3>
 							<p class="Services__text">
 								Nam liber tempor cum soluta nobis eleifend option congue nihil #2
 							</p>
-							<div class="Line"></div>
+							<div class="Servicer__line Line"></div>
 						</div>
 					</div>
 				</div>
@@ -155,88 +155,130 @@
 					Photography
 				</button>
 			</div>
-			<div class="OurProjects__contentBox">
-				<div class="Grid">
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
+			<div class="Grid">
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
 							<img class="OurProjects__image" src="img/OurProject__product1.png" alt="product1">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Claritas Etiam Processus
-								</p>
-								<p class="OurProjects__thema">
-									Photography, Nature
-								</p>
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
-							<img class="OurProjects__image" src="img/OurProject__product2.png" alt="product2">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Quam Nutamus Farum
-								</p>
-								<p class="OurProjects__thema">
-									Graphic Design, Mock-Up
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
-							<img class="OurProjects__image" src="img/OurProject__product3.png" alt="product3">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Usus Legentis Videntur
-								</p>
-								<p class="OurProjects__thema">
-									Photography, Holiday
-								</p>
-							</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Claritas Etiam Processus
+							</p>
+							<p class="OurProjects__thema">
+								Photography, Nature
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="OurProjects__contentBox">
-				<div class="Grid">
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
+							<img class="OurProjects__image" src="img/OurProject__product2.png" alt="product2">
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
+							</div>
+						</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Quam Nutamus Farum
+							</p>
+							<p class="OurProjects__thema">
+								Graphic Design, Mock-Up
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
+							<img class="OurProjects__image" src="img/OurProject__product3.png" alt="product3">
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
+							</div>
+						</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Usus Legentis Videntur
+							</p>
+							<p class="OurProjects__thema">
+								Photography, Holiday
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
 							<img class="OurProjects__image" src="img/OurProject__product4.png" alt="product4">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Claritas Etiam Processus
-								</p>
-								<p class="OurProjects__thema">
-									Photography, Nature
-								</p>
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
 							</div>
 						</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Quam Nutamus Farum
+							</p>
+							<p class="OurProjects__thema">
+								Graphic Design, Mock-Up
+							</p>
+						</div>
 					</div>
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
+				</div>
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
 							<img class="OurProjects__image" src="img/OurProject__product5.png" alt="product5">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Quam Nutamus Farum
-								</p>
-								<p class="OurProjects__thema">
-									Graphic Design, Mock-Up
-								</p>
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
 							</div>
 						</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Quam Nutamus Farum
+							</p>
+							<p class="OurProjects__thema">
+								Graphic Design, Mock-Up
+							</p>
+						</div>
 					</div>
-					<div class="Grid__item Grid__item_third">
-						<div class="OurProjects__case">
+				</div>
+				<div class="Grid__item Grid__item_third">
+					<div class="OurProjects__case">
+						<div class="Opacity">
 							<img class="OurProjects__image" src="img/OurProject__product6.png" alt="product6">
-							<div class="OurProjects__details">
-								<p class="OurProjects__name">
-									Usus Legentis Videntur
-								</p>
-								<p class="OurProjects__thema">
-									Photography, Holiday
-								</p>
+							<div class="OpacityBox">
+								<div class="OpacityBox__wrapper">
+									<a href="" class="OpacityBox__link OpacityBox__link_link"></a>
+									<a href="" class="OpacityBox__link OpacityBox__link_lupa"></a>
+								</div>
 							</div>
+						</div>
+						<div class="OurProjects__details">
+							<p class="OurProjects__name">
+								Usus Legentis Videntur
+							</p>
+							<p class="OurProjects__thema">
+								Photography, Holiday
+							</p>
 						</div>
 					</div>
 				</div>
@@ -303,7 +345,8 @@
 		<div class="Container">
 			<div class="Grid Grid_90per">
 				<div class="Grid__item Grid__item_small">
-					<div class="CountersBox CountersBox_back1">
+					<div class="CountersBox">
+						<img class="CountersBox__img" src="img/Counters__back1.png" alt="">
 						<div class="CountersBox__index">
 							3587
 						</div>
@@ -314,7 +357,8 @@
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_small">
-					<div class="CountersBox CountersBox_back2">
+					<div class="CountersBox ">
+						<img class="CountersBox__img" src="img/Counters__back2.png" alt="">
 						<div class="CountersBox__index">
 							207
 						</div>
@@ -325,7 +369,8 @@
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_small">
-					<div class="CountersBox CountersBox_back3">
+					<div class="CountersBox ">
+						<img class="CountersBox__img" src="img/Counters__back3.png" alt="">
 						<div class="CountersBox__index">
 							2500
 						</div>
@@ -336,7 +381,8 @@
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_small">
-					<div class="CountersBox CountersBox_back4">
+					<div class="CountersBox ">
+						<img class="CountersBox__img" src="img/Counters__back4.png" alt="">
 						<div class="CountersBox__index">
 							873
 						</div>
@@ -347,7 +393,8 @@
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_small">
-					<div class="CountersBox CountersBox_back5">
+					<div class="CountersBox ">
+						<img class="CountersBox__img" src="img/Counters__back5.png" alt="">
 						<div class="CountersBox__index">
 							900
 						</div>
@@ -375,7 +422,10 @@
 			<div class="Grid">
 				<div class="Grid__item Grid__item_third">
 					<div class="PostBox">
-						<img class="PostBox__photo" src="img/RecentPost1.png" alt="bitch">
+						<div class="PostBox__opacityBox">
+							<img class="PostBox__photo" src="img/RecentPost1.png" alt="bitch">
+							<div class="PostBox__opacity"></div>
+						</div>
 						<div class="PostBox__date">
 							<div class="PostBox__day">
 								30
@@ -393,14 +443,16 @@
 							</div>
 							<a href="" class="PostBox__link Link">
 								Read More
-								<img class="PostBox__arrow" src="img/PostBox__Arrow.png" alt="arrow" >
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_third">
 					<div class="PostBox">
-						<img class="PostBox__photo" src="img/RecentPost2.png" alt="laptop">
+						<div class="PostBox__opacityBox">
+							<img class="PostBox__photo" src="img/RecentPost2.png" alt="laptop">
+							<div class="PostBox__opacity"></div>
+						</div>
 						<div class="PostBox__date">
 							<div class="PostBox__day">
 								30
@@ -418,14 +470,16 @@
 							</div>
 							<a href="" class="PostBox__link Link">
 								Read More
-								<img class="PostBox__arrow" src="img/PostBox__Arrow.png" alt="arrow" >
 							</a>
 						</div>
 					</div>
 				</div>
 				<div class="Grid__item Grid__item_third">
 					<div class="PostBox">
-						<img class="PostBox__photo" src="img/RecentPost3.png" alt="ship">
+						<div class="PostBox__opacityBox">
+							<img class="PostBox__photo" src="img/RecentPost3.png" alt="bitch">
+							<div class="PostBox__opacity"></div>
+						</div>
 						<div class="PostBox__date">
 							<div class="PostBox__day">
 								30
@@ -443,7 +497,6 @@
 							</div>
 							<a href="" class="PostBox__link Link">
 								Read More
-								<img class="PostBox__arrow" src="img/PostBox__Arrow.png" alt="arrow" >
 							</a>
 						</div>
 					</div>
@@ -533,7 +586,7 @@
 					</div>
 					<div class="ContentBox">
 						<div class="ContentBox__text ContentBox__text_MB10">
-							@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming
+							<span class="Text_color00bff3">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming
 						</div>
 						<div class="ContentBox__date">
 							3 mins ago
@@ -541,7 +594,7 @@
 					</div>
 					<div class="ContentBox">
 						<div class="ContentBox__text ContentBox__text_MB10">
-							Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+							Mirum est <span class="Text_color00bff3">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
 						</div>
 						<div class="ContentBox__date">
 							5 hours ago
@@ -561,26 +614,34 @@
 						Dribbble Widgeta
 					</div>
 					<div class="Grid Grid_mini">
-						<div class="Grid__item Grid__item_half Grid__item_mini">
-							<img class="Widget" src="img/Footer__Widget1.png" alt="">
+						<div class="Grid__item Grid__item_half Grid__item_mini Grid__item_noMargin">
+							<div class="Widget">
+								<img class="Widget__pic" src="img/Footer__Widget1.png" alt="widget">
+							</div>
 						</div>
-						<div class="Grid__item Grid__item_half Grid__item_mini">
-							<img class="Widget" src="img/Footer__Widget2.png" alt="">
+						<div class="Grid__item Grid__item_half Grid__item_mini Grid__item_noMargin">
+							<div class="Widget">
+								<img class="Widget__pic" src="img/Footer__Widget2.png" alt="widget">
+							</div>
 						</div>
-					</div>
-					<div class="Grid Grid_mini">
-						<div class="Grid__item Grid__item_half Grid__item_mini">
-							<img class="Widget" src="img/Footer__Widget3.png" alt="">
+						<div class="Grid__item Grid__item_half Grid__item_mini Grid__item_noMargin">
+							<div class="Widget">
+								<img class="Widget__pic" src="img/Footer__Widget3.png" alt="widget">
+							</div>
 						</div>
-						<div class="Grid__item Grid__item_half Grid__item_mini">
-							<img class="Widget" src="img/Footer__Widget4.png" alt="">
+						<div class="Grid__item Grid__item_half Grid__item_mini Grid__item_noMargin">
+							<div class="Widget">
+								<img class="Widget__pic" src="img/Footer__Widget4.png" alt="widget">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="Footer_otherBackground">
+		</div>
+		<div class="Footer__bottom">
+			<div class="Container">
 				<div class="Grid">
-					<div class="Grid__item Grid__item_half">
+					<div class="Grid__item Grid__item_half Grid__item_noMargin">
 						<div class="Footer__Copyright">
 							Copyright © 2015 Waxom
 						</div>
@@ -600,7 +661,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="Grid__item Grid__item_half Grid__item_textRight">
+					<div class="Grid__item Grid__item_half Grid__item_textRight Grid__item_noMargin">
 						<div class="Footer__designed">
 							Designed by
 						</div>

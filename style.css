@@ -19,8 +19,12 @@
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 0 15px;
+	margin: 30px 0;
 	vertical-align: middle;	
 	width: 25%;
+}
+.Grid__item_noMargin {
+	margin: 0;
 }
 .Grid__item_small {
 	width: 20%;
@@ -98,6 +102,7 @@
 .Link {
 	font-size: 14px;
 	color: #c7b299;
+	transition: color 1s;
 }
 
 .Link:hover {
@@ -126,7 +131,7 @@
 	background: url(img/Header_background.png) no-repeat center;
 	background-size: cover;
 	padding-top: 40px;
-	padding-bottom: 380px;
+	padding-bottom: 280px;
 }
 .Logo__pic,
 .Logo__text,
@@ -163,11 +168,31 @@
 	text-align: right;
 	width: calc(100% - 680px)
 }
-.Modul__search {
-	margin-left: 30px;
+.Modul__box {
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	height: 36px;
+	transition: background-image 0.1s;
+	width: 36px;
+}
+.Modul__box:last-child {
+	margin-left: 20px;
+}
+.Modul__box_cart {
+	background-image: url(img/iconCart.png);
+}
+.Modul__box_search {
+	background-image: url(img/iconSearch.png);
+}
+.Modul__box_cart:hover {
+	background-image: url(img/iconCart_Hover.png);
+}
+.Modul__box_search:hover {
+	background-image: url(img/iconSearch_Hover.png);
 }
 .Slider {
-	padding-top: 280px;
+	padding-top: 180px;
 	text-align: center;
 }
 .Slider__TopText,
@@ -196,16 +221,23 @@
 					SERVICES
 ==================================================*/
 .Section_services {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 25px;
+	padding-bottom: 50px;
 }
 .Services {
 	background-position: top center;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
-	padding-top: 75px;
 	text-align: center;
+	transition: transform 1s;
 	width: 100%;
+}
+.Servicer__line {
+	transition: width 1s,
+				background-color 0.5s;
+}
+.Services__icon {
+	margin: 35px auto;
 }
 .Services__heading {
 	color: #555555;
@@ -217,17 +249,20 @@
 	color: #8c8c8c;
 	font-size: 14px;
 }
-.Services_webApp {
-	background-image: url(img/Services_webApp.png) ;
+.Services__heading,
+.Services__text {
+	transition: color 0.5s;
 }
-.Services_develop {
-	background-image: url(img/Services_develop.png);
+.Services:hover {
+	transform: scale(1.1);
 }
-.Services_custom {
-	background-image: url(img/Services_custom.png);
+.Services:hover .Servicer__line {
+	background-color: #c7b299;
+	width: 220px
 }
-.Services_marketing {
-	background-image: url(img/Services_marketing.png);
+.Services:hover .Services__heading,
+.Services:hover .Services__text {
+	color: #c7b299
 }
 /*==================================================
 					OurProjects
@@ -241,6 +276,9 @@
 	margin: 25px auto 40px auto;
 	width: 60%;
 }
+.OurProjects__wrapper {
+	margin-bottom: 10px;
+}
 .OurProjects__button {
 	background-color: #ffffff;
 	border: 1px solid #f8f8f8;
@@ -250,7 +288,9 @@
 	padding: 5px 22px;
 	margin: 0px 5px;
 	transition: background-color 1s,
-				color 1s;
+				color 0.2s,
+				border-radius 1s;
+								
 }
 .OurProjects__button:first-child {
 	margin-left: 0;
@@ -260,17 +300,66 @@
 }
 .OurProjects__button:hover {
 	background-color: #998675;
+	border-radius: 5px ;
 	color: #ffffff;
 }
-.OurProjects__contentBox {
-	margin-top: 30px;
-	margin-bottom: 30px;
+.OurProjects__case {
+	 overflow: hidden;
 }
-.OurProjects__case:hover {
-
+.Opacity {
+	position: relative;
+}
+.OpacityBox {
+	background: rgba(0,0,0,0.0);
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: background 1s;
+	width: 100%;
+}
+.OurProjects__case:hover .OpacityBox{
+	background: rgba(0,0,0,0.6);
+}
+.OpacityBox__wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+}
+.OpacityBox__link {
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 25px;
+	opacity: 0;
+	transition: opacity 1s;
+	width: 25px;
+}
+.OurProjects__case:hover .OpacityBox__link{
+	opacity: 1;
+}
+.OpacityBox__link:last-child {
+	margin-left: 30px;
+}
+.OpacityBox__link_link {
+	background-image: url(img/OurProjects__link.png);
+}
+.OpacityBox__link_link:hover .OpacityBox__link_link {
+	background-image: url(img/OurProjects__link_hover.png);
+}
+.OpacityBox__link_lupa {
+	background-image: url(img/OurProjects__lupa.png);
+}
+.OpacityBox__link_lupa:hover .OpacityBox__link_lupa {
+	background-image: url(img/OurProjects__lupa_hover.png);
 }
 .OurProjects__image {
+	transition: transform 1s;
 	width: 100%;
+}
+.OurProjects__case:hover .OurProjects__image{
+	transform: scale(1.2) rotate(-8deg);
 }
 .OurProjects__details {
 	background-color: #fbfaf8;
@@ -287,6 +376,14 @@
 	transform: rotate(45deg);
 	width: 30px;
 }
+.OurProjects__details ,
+.OurProjects__details::before {
+	transition: background-color 1s;
+}
+.OurProjects__case:hover  .OurProjects__details,
+.OurProjects__case:hover  .OurProjects__details::before {
+	background-color: #362f2d;
+}
 .OurProjects__name {
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
@@ -294,20 +391,23 @@
 	color: #c7b299;
 	margin-top: 0;
 	margin-bottom: 10px;
+	transition: color 1s;
+}
+.OurProjects__case:hover  .OurProjects__name{
+	color: #ffffff;
 }
 .OurProjects__thema {
 	font-size: 14px;
 	color: #d1d1d1;
 	margin: 0 auto;
+	transition: color 1s;
 }
-
+.OurProjects__case:hover  .OurProjects__thema{
+	color: #c7b299;
+}
 .OurProjects__moreBtn {
-	margin-top: 45px;
+	margin-top: 10px;
 }
-
-
-
-
 /*==================================================
 					Presentation
 ==================================================*/
@@ -316,6 +416,9 @@
 	background-size: cover;
 	padding: 210px 0;
 	text-align: center;
+}
+.Presentation__play {
+	cursor: pointer;
 }
 .Presentation__heading {
 	margin-top: 45px;
@@ -387,7 +490,7 @@
 ==================================================*/
 .Section__counters{
 	background: linear-gradient(to right, #000000 40%, #4d3327 90%);
-	padding-top: 70px;
+	padding-top: 50px;
 	padding-bottom: 60px;
 }
 .Grid_90per {
@@ -397,7 +500,6 @@
 	background-position: top center;
 	background-repeat: no-repeat;
 	color: #ffffff;
-	padding-top: 75px;
 	text-align: center;
 }
 .CountersBox__index {
@@ -412,57 +514,75 @@
 	margin-bottom: 30px;
 	text-transform: uppercase;
 }
-.CountersBox_back1 {
-	background-image: url(img/Counters__back1.png);
-}
-.CountersBox_back2 {
-	background-image: url(img/Counters__back2.png);
-}
-.CountersBox_back3 {
-	background-image: url(img/Counters__back3.png);
-}
-.CountersBox_back4 {
-	background-image: url(img/Counters__back4.png);
-}
-.CountersBox_back5 {
-	background-image: url(img/Counters__back5.png);
+.CountersBox__img {
+	margin: 15px auto;
 }
 /*==================================================
 					RecentPosts
 ==================================================*/
 .Section__RecentPosts {
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 .RecentPosts__description {
 	color: #8c8c8c;
-	margin: 30px auto 40px auto;
+	margin: 30px auto 10px auto;
 	width: 66%;
 }
 .PostBox {
 	border: 1px solid #fdfdfd;
 	position: relative;
 	text-align: left;
+	overflow: hidden;
+}
+.PostBox__opacityBox {
+	position: relative;
+}
+.PostBox__opacity {
+	background: rgba(0,0,0,0);
+	content: "";
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	transition: background 1s;
+	width: 100%;
+}
+.PostBox:hover .PostBox__opacity {
+	background: rgba(0,0,0,0.6);
 }
 .PostBox__date {
 	border-radius: 5px;
 	color: #ffffff;
 	position: absolute;
+	min-width: 50px;
 	left: 20px;
 	overflow: hidden;
+	text-align: center;
 	top: 20px;
 }
 .PostBox__day {
 	background-color: #363636;
 	font-size: 24px;
-	padding: 10px 15px;
+	padding: 4px 0px;
+}
+.PostBox__day ,
+.PostBox__month ,
+.PostBox__details {
+	transition: background 1s;
+}
+.PostBox:hover .PostBox__day {
+	background: #c7b299;
 }
 .PostBox__month {
 	background-color: #252525;
 	font-family: 'Roboto',sans-serif;
 	font-size: 12px;
-	padding: 8px 15px;
+	padding: 8px 0px;
+}
+.PostBox:hover .PostBox__month {
+	background: #a48d72;
 }
 .PostBox__photo {
 	width: 100%;
@@ -470,10 +590,20 @@
 .PostBox__details {
 	padding: 30px;
 }
+.PostBox:hover .PostBox__details {
+	background: #362f2d;
+}
 .PostBox__name {
 	color: #555555;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
+}
+.PostBox__name ,
+.PostBox__title {
+	transition: color 0.5s;
+}
+.PostBox:hover .PostBox__name {
+	color: #948473;
 }
 .PostBox__title {
 	color: #8c8c8c;
@@ -481,11 +611,20 @@
 	margin-top: 25px;
 	margin-bottom: 30px;
 }
+.PostBox:hover .PostBox__title {
+	color: #ffffff;
+}
 .PostBox__link {
 	text-decoration: none;
 }
-.PostBox__arrow {
-	padding-left: 20px;
+.PostBox__link::after {
+	background: url(img/PostBox__Arrow.png) no-repeat center;
+	content: "";
+	display: inline-block;
+	height: 8px;
+	margin-left: 20px;
+	width: 6px;
+
 }
 /*==================================================
 			Partners		
@@ -493,14 +632,14 @@
 .Section__Partners {
 	background: url(img/Partners__back.png) no-repeat center;
 	background-size: cover;
-	padding-top: 135px;
-	padding-bottom: 135px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .Partners {
-	padding: 25px;
+	text-align: center;
 }
 .Partners__logo {
-	width: 100%;
+	width: auto;
 }
 /*==================================================
 			Footer	
@@ -508,7 +647,7 @@
 .Footer {
 	background-color: #191919;
 	color: #555555;
-	padding: 80px 0 0 0;
+	padding: 50px 0 0 0;
 	overflow: hidden;
 }
 .Footer__description {
@@ -549,14 +688,34 @@
 .Footer__heading_MB10 {
 	margin-bottom: 10px;
 }
+.ContentBox__date ,
+.ContentBox__text {
+	transition: color 0.5s;
+}
+.ContentBox:hover .ContentBox__date{
+	color: #ffffff;
+}
+.ContentBox:hover .ContentBox__text {
+	color: #c7b299
+}
+.Text_color00bff3 {
+	color: #00bff3;
+}
 .Widget {
+	overflow: hidden;
+}
+.Widget__pic {
+	transition: transform 1s;
 	width: 100%;
 }
-.Footer_otherBackground {
+.Widget:hover .Widget__pic{
+	transform: scale(1.1);
+}
+.Footer__bottom {
 	background-color: #111111;
 	padding-top: 45px;
 }
-.Footer_otherBackground,
+.Footer__bottom,
 .Link_grey {
 	color: #555555;	
 	padding-bottom: 50px;
@@ -575,6 +734,9 @@
 	border-left: 1px solid #555555;	
 	padding: 0 8px;
 }
+.Footer__link:hover .Link {
+	color: #ffffff;
+}
 .Footer__designed,
 .Footer__indiv {
 	padding-right: 5px;
@@ -583,7 +745,6 @@
 	border-left: 1px solid #555555;	
 	margin-left: 5px;
 	padding-left: 5px;
-
 }
 
 
