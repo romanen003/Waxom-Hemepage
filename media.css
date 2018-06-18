@@ -1,0 +1,258 @@
+@media screen and (max-width: 480px) {
+	.Container {
+		width: 100%;
+	}
+	.Slider__middleText {
+		font-size: 26px;
+	}
+
+	.CountersBox__index {
+		font-size: 25px;
+	}
+
+	.Slider__TopText {
+		font-size: 17px;
+	}
+
+	.Heading {
+		font-size: 22px;
+	}
+	.PostBox__day,
+	.Footer__heading {
+		font-size: 18px;
+	}
+	.Services__heading {
+		font-size: 16px;
+	}
+	.OurProjects__name {
+		font-size: 15px;
+	}
+	.Description,
+	.Logo__text,
+	.Excellent__element
+	 {
+		font-size: 13px;
+	}
+	.Button,
+	.Link,
+	.Nav__link,
+	.Services__text,
+	.OurProjects__thema.
+	.Presentation__timing,
+	.ContentBox__text,
+	.Footer__description,
+	.Footer__designed,
+	.Footer__indiv,
+	.Footer__link,
+	.Footer__Copyright
+	  {
+		font-size: 12px;
+	}
+	.PostBox__month,
+	.ContentBox__date {
+		font-size: 10px;
+	}
+	.Slider__description {
+		width: 80%;
+	}
+	.Slider {
+		padding-top: 100px; 
+	}
+	.Section_Wrapperbackground {
+		padding-bottom: 100px;
+	}
+	.Grid__item {
+		width: 100%;
+	}
+	.Section_OurProjects {
+    	padding-top: 20px; 
+	}
+	.Section__Presentation {
+		padding: 50px 0;
+	}
+	.Excellent__left {
+		display: none;
+	}
+	.Excellent__right {
+		padding: 70px 0;
+		text-align: center;
+		width: 100%;
+	}.Excellent__list {
+		padding: 0;
+    	margin-top: 30px;
+	}
+	.Excellent__element {
+		text-align: left;
+	}
+	.Grid_90per {
+		padding: 0;
+		text-align: center;
+	}
+	.Grid__item_small {
+		width: 33.3333%;
+	}
+	.Grid__item_Partners {
+		padding: 35px; 
+	}
+	.Footer__logo,
+	.Footer__description {
+		text-align: center;
+	}
+
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	.Container {
+		width: 100%;
+	}
+	.Section_Wrapperbackground {
+		padding-bottom: 200px;
+	}
+	.Slider__middleText {
+		font-size: 34px;
+	}
+
+	.CountersBox__index {
+		font-size: 34px;
+	}
+
+	.Slider__TopText {
+		font-size: 24px;
+	}
+
+	.Heading {
+		font-size: 25px;
+	}
+	.PostBox__day,
+	.Footer__heading {
+		font-size: 20px;
+	}
+	.Services__heading {
+		font-size: 18px;
+	}
+	.OurProjects__name {
+		font-size: 16px;
+	}
+	.Description,
+	.Logo__text,
+	.Excellent__element
+	 {
+		font-size: 14px;
+	}
+	.Button,
+	.Link,
+	.Nav__link,
+	.Services__text,
+	.OurProjects__thema.
+	.Presentation__timing,
+	.ContentBox__text,
+	.Footer__description,
+	.Footer__designed,
+	.Footer__indiv,
+	.Footer__link,
+	.Footer__Copyright
+	  {
+		font-size: 12px;
+	}
+	.PostBox__month,
+	.ContentBox__date {
+		font-size: 10px;
+	}
+	.Slider__description {
+		width: 80%;
+	}
+	.Slider {
+		padding-top: 100px; 
+	}	
+	.Section_Wrapperbackground {
+		padding-bottom: 140px;
+	}
+	.Grid__item {
+		width: 50%;
+	}
+	.Section__Presentation {
+		padding: 130px 0;
+	}
+	.Excellent__left {
+		display: none;
+	}
+	.Excellent__right {
+		padding: 70px 0;
+		text-align: center;
+		width: 100%;
+	}.Excellent__list {
+		padding: 0;
+    	margin-top: 30px;
+	}
+	.Excellent__element {
+		text-align: left;
+	}
+	.Grid_90per {
+		padding: 0;
+		text-align: center;
+	}
+	.Grid__item_small {
+		width: 33.3333%;
+	}
+	.Grid__item_third {
+		width: 100%;
+	}
+	.Grid__item_Partners {
+		padding: 35px;
+		width: 50%;
+	}
+	.Section_OurProjects {
+		padding: 0 0 30px 0;
+	}
+	.OurProjects__description {
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	.Section__Partners {
+		padding: 0;
+	}
+}
+@media ( min-width: 769px) and (max-width: 979px) {
+	.Container {
+		width: 750px;
+	}
+	.Slider__description {
+		width: 80%;
+	}
+	.Slider {
+		padding-top: 150px; 
+	}		
+	.Section_Wrapperbackground {
+		padding-bottom: 150px;
+	}
+	.Grid__item {
+		width: 50%;
+	}
+	.Section__Presentation {
+		padding: 130px 0;
+	}
+	.Excellent__left {
+		display: none;
+	}
+	.Excellent__right {
+		padding: 100px 0;
+		width: 100%;
+	}
+	.Grid_90per {
+		padding: 0;
+	}
+	.Grid__item_small {
+		width: 20%;
+	}
+	.Grid__item_third {
+		width: 33.3333%;
+	}
+	.Grid__item_Partners {
+		width: 25%;
+	}
+}
+@media ( min-width: 980px) and (max-width: 1200px) {
+	.Container {
+		width: 950px;
+	}	
+	
+}
