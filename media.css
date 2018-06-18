@@ -91,12 +91,34 @@
 	.Grid__item_small {
 		width: 33.3333%;
 	}
-	.Grid__item_Partners {
-		padding: 35px; 
+	.Partners__logo {
+    	width: 50%;
 	}
 	.Footer__logo,
 	.Footer__description {
 		text-align: center;
+	}
+	.OurProjects__description {
+		margin-bottom: 20px;
+		width: 90%;
+	}
+	.OurProjects__button {
+		margin: 5px;
+	}
+	.Footer__heading {
+		text-align: center;
+	}	
+	.Widget {
+		text-align: center;
+	}				
+	.Widget__pic {
+		width: 60%;
+	}
+	.Grid__item_textRight {
+    	text-align: left;
+	}
+	.Footer__bottom {
+		padding-top: 0;
 	}
 
 }
@@ -210,6 +232,9 @@
 	.Section__Partners {
 		padding: 0;
 	}
+	.OurProjects__button {
+		margin: 5px;
+	}
 }
 @media ( min-width: 769px) and (max-width: 979px) {
 	.Container {
@@ -254,5 +279,20 @@
 	.Container {
 		width: 950px;
 	}	
+	.Grid__item_header25 {
+		width: 25%;
+	}
+	.Grid__item_header75 {
+		width: 75%;
+	}
+	.Nav__link {
+		margin-right: 15px;
+	}
+	.Modul__box {
+		margin-left: 10px;
+	}
+	.Modul {
+		width: auto;
+	}
 	
 }
