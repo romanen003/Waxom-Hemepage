@@ -120,6 +120,31 @@
 	.Footer__bottom {
 		padding-top: 0;
 	}
+	.Footer__link {
+		border-left: none;
+		padding-left: 0;
+		width: 100%;
+	}
+	.Footer__designed,
+	.Footer__indiv {
+		border: none;
+	}
+	.Footer__boxlink {
+		width: 100%;
+	}
+	.Grid__item_half {
+		width: 50%;
+	}
+	.Nav,
+	.Modul {
+		display: none;
+	}
+	.Grid__item_header25 {
+		text-align: center;
+	}
+	.Grid__item_header75 {
+		width: 0;
+	}
 
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -235,6 +260,29 @@
 	.OurProjects__button {
 		margin: 5px;
 	}
+	.Footer__link {
+		border-left: none;
+		padding-left: 0;
+		width: 100%;
+	}
+	.Footer__designed,
+	.Footer__indiv {
+		border: none;
+	}
+	.Footer__boxlink {
+		width: 100%;
+	}
+	.Nav,
+	.Modul {
+		display: none;
+	}
+	.Grid__item_header25 {
+		text-align: center;
+		width: 100%;
+	}
+	.Grid__item_header75 {
+		width: 0;
+	}
 }
 @media ( min-width: 769px) and (max-width: 979px) {
 	.Container {
@@ -273,6 +321,22 @@
 	}
 	.Grid__item_Partners {
 		width: 25%;
+	}
+	.Footer__link {
+		border-left: none;
+		padding-left: 0;
+		width: 100%;
+	}
+	.Nav,
+	.Modul {
+		display: none;
+	}
+	.Grid__item_header25 {
+		text-align: center;
+		width: 100%;
+	}
+	.Grid__item_header75 {
+		width: 0;
 	}
 }
 @media ( min-width: 980px) and (max-width: 1200px) {
